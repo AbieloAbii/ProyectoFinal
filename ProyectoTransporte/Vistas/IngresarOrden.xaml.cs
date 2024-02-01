@@ -210,6 +210,6 @@ public partial class IngresarOrden : ContentPage
 
     private void btnVerOrdenes_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new Vistas.listarOrdenes());
     }
 }

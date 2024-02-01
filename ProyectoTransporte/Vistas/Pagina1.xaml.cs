@@ -27,4 +27,13 @@ public partial class Pagina1 : ContentPage
         await Navigation.PushAsync(new Vistas.IngresarTransporte());
      }
 
+    private async void btn_Ordenes_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Vistas.IngresarOrden());
+    }
+
+    private async void btn_Facturas_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Vistas.IngresarFactura());
+    }
 }

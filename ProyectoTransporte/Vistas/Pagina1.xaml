@@ -28,6 +28,11 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
 
                 <StackLayout VerticalOptions="Center">
@@ -36,14 +41,23 @@
                     </Frame>
                     <Label  x:Name="TituloLabel" Grid.Row="1" Text="Bienvenido/a" TextColor="Black" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold" Padding="5" CharacterSpacing="0"/>
                 </StackLayout>
+                
                 <StackLayout Grid.Row="2" VerticalOptions="CenterAndExpand" Margin="35">
-
                     <Button x:Name="Button_Transporte" Text="Transporte" Clicked="Button_Transporte_Clicked" BackgroundColor="DarkSalmon" BorderColor="Black" FontSize="Large" TextColor="Red" FontAttributes="Italic" CornerRadius="5" WidthRequest="200" />
-
                 </StackLayout>
+                
                 <StackLayout Grid.Row="3" VerticalOptions="CenterAndExpand" Margin="35">
                     <Button x:Name="Button_Conductor" Text="Conductor" Clicked="Button_Conductor_Clicked" BackgroundColor="DarkGray" BorderColor="Black" FontSize="Large" TextColor="Black" FontAttributes="Italic" CornerRadius="5" WidthRequest="200" />
                 </StackLayout>
+
+                <StackLayout Grid.Row="4" VerticalOptions="CenterAndExpand" Margin="35">
+                    <Button x:Name="btn_Ordenes" Text="Ordenes" Clicked="btn_Ordenes_Clicked" BackgroundColor="DarkGray" BorderColor="Black" FontSize="Large" TextColor="Black" FontAttributes="Italic" CornerRadius="5" WidthRequest="200" ></Button>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" VerticalOptions="CenterAndExpand" Margin="35">
+                    <Button x:Name="btn_Facturas" Text="Ingresar Factura" Clicked="btn_Facturas_Clicked"  BackgroundColor="DarkGray" BorderColor="Black" FontSize="Large" TextColor="Black" FontAttributes="Italic" CornerRadius="5" WidthRequest="200"></Button>
+                </StackLayout>
+                
             </Grid>
         </Grid>
     </ScrollView>
